@@ -1,0 +1,36 @@
+import seaborn as sns
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+\\\\ 1 y 2
+
+#leemos datos
+museum_data = pd.read_csv(museum_filepath, index_col='Date', parse_dates=True)
+
+#creamos figura con matplotlib.pyplot
+plt.figure(figsize = (14,6))
+plt.title("")
+
+#line plots
+sns.lineplot(data=,)
+
+#podemos mostrar solo algunas columnas (datos) o mostrar 2 o mas... (subset)
+sns.lineplot(data=datos['col1'], label = '')
+sns.lineplot(data=datos['col2'], label = '')
+
+plt.xlabel('Date')
+
+\\\\ 3 BARPLOT AND HEAT
+#average delay for the company NK for months(.index) ---> usar .index en vez de flight_data['Month']
+sns.barplot(x=flight_data.index, y=flight_data['NK']) 
+
+# Heatmap showing average arrival delay for each airline by month
+sns.heatmap(data=flight_data, annot=True)
+
+
+
+
+
+
+
